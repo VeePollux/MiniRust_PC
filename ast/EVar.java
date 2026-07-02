@@ -11,7 +11,7 @@ public class EVar extends Exp{
 	  
 	} 
 
-public String GERA_JAVA(){
-	return this.var;
-}
+    public String GERA_JAVA() {
+        return this.var;
+    }
 }

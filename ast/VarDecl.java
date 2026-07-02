@@ -10,6 +10,10 @@ public class VarDecl{
    }
 
 public String GERA_JAVA() {
-      return (this.type + " " + this.var + ";");
+	String tipoJava = this.type;
+	if (tipoJava.equals("f32"))  tipoJava = "float";
+	if (tipoJava.equals("bool")) tipoJava = "boolean";
+
+	return (tipoJava + " " + this.var + ";");
    }
 }

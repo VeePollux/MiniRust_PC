@@ -9,4 +9,11 @@ public class ParamFormalFun{
    	this.var = var;
    }
 
+   public String GERA_JAVA() {
+      String tipoJava = this.type;
+      if (tipoJava.equals("f32"))  tipoJava = "float";
+      if (tipoJava.equals("bool")) tipoJava = "boolean";
+
+      return (tipoJava + " " + this.var);
+   }
 }

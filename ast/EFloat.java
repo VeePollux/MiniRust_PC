@@ -11,4 +11,8 @@ public class EFloat extends Exp{
 	  
 	} 
 
+	public String GERA_JAVA() {
+       return String.valueOf(this.value) + "f";
+    }
+
 }

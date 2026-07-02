@@ -15,8 +15,8 @@ public class EOpExp extends Exp{
 	  
 	} 
 
-public String GERA_JAVA(){
-	return this.arg1 + this.op + this.arg2;
+public String GERA_JAVA() {
+    return "(" + arg1.GERA_JAVA() + " " + op + " " + arg2.GERA_JAVA() + ")";
 }
 
 }
