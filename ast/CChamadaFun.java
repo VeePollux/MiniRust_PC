@@ -1,6 +1,8 @@
-package ast;
+
 
 import java.util.ArrayList;
+
+import ast.Comando;
 
 public class CChamadaFun extends Comando{
 	public int linha;
@@ -14,4 +16,11 @@ public class CChamadaFun extends Comando{
 	  this.args = args;
 	} 
 
+	public String GERA_JAVA(){
+		String argum = "";
+		for(Exp a : args){
+			argum = argum + a.GERA_JAVA();
+		}
+		return fun + "(" argum + ");";
+	}
 }

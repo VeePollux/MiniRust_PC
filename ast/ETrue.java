@@ -5,8 +5,11 @@ public class ETrue extends Exp{
 	
 	public ETrue()
 	{
-	  super();
-	  
+	  super(); 
 	} 
+
+public String GERA_JAVA(){
+	return "True";
+}
 
 }

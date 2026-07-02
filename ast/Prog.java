@@ -1,4 +1,4 @@
-package ast;
+
 
 import java.util.ArrayList;
 
@@ -10,6 +10,5 @@ public class Prog{
         this.main = main;
         this.fun = fun;
     }
-
 }
 
