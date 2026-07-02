@@ -18,18 +18,5 @@ public class Fun{
 		this.body = body;
 	}
 
-public String GERA_JAVA(){
-	String nome;
-	String params = "";
-	String retorno;
-	String vars = "";
-	String body = "";
-
-	for(var in vars){
-		var +
-	}
-
    
-}
-
 }
