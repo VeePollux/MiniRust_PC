@@ -1,5 +1,4 @@
 package ast;
-
 import java.util.ArrayList;
 
 public class CPrint extends Comando{
@@ -13,5 +12,10 @@ public class CPrint extends Comando{
 	  this.exp = exp;
 	  
 	} 
+
+	public String GERA_JAVA(){
+		return "System.out.println(" + this.exp.GERA_JAVA() + ");";
+
+	}
 
 }

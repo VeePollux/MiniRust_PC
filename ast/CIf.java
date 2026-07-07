@@ -1,9 +1,5 @@
-
-
+package ast;
 import java.util.ArrayList;
-
-import ast.Comando;
-import ast.Exp;
 
 public class CIf extends Comando{
 	public int linha;
@@ -21,9 +17,9 @@ public class CIf extends Comando{
 	public String GERA_JAVA(){
 		String blo = "";
 		for(Comando b : this.bloco){
-			blo = blo + "\n\t"+ b.GERA_JAVA();
+			blo = blo + "\n\t\t\t"+ b.GERA_JAVA();
 		}
-		return "if(" + exp.GERA_JAVA() + "){" + blo + "\n}"; 
+		return "if(" + exp.GERA_JAVA() + "){" + blo + "\n\t\t}"; 
 	}
 	
 }

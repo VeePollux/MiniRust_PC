@@ -12,4 +12,8 @@ public class CReadInput extends Comando{
 	  this.var = var;
 	} 
 
+	public String GERA_JAVA(){
+		return this.var + " = scanner.nextFloat();";
+	}
+
 }

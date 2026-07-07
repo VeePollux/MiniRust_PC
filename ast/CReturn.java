@@ -1,7 +1,5 @@
 package ast;
 
-import java.util.ArrayList;
-
 public class CReturn extends Comando{
 	public int linha;
 	public Exp exp;
@@ -13,5 +11,9 @@ public class CReturn extends Comando{
 	  this.exp = exp;
 	  
 	} 
+
+	public String GERA_JAVA(){
+		return "return " + this.exp.GERA_JAVA() + ";";
+	}
 
 }

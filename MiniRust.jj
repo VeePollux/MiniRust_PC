@@ -8,8 +8,20 @@ public class MiniRust {
     
  	MiniRust parser = new MiniRust(new FileInputStream(args[0]));
  	Prog arvore = parser.MiniRust();
+	geraCodigo(arvore, args[0]);
+  }
+
+  public static void geraCodigo(Prog arvore, String arquivo) throws IOException { 
+	arquivo = arquivo.replace(".rs", ".java");
+	String nomeMain = arquivo.replace(".java", "");
+	FileWriter writer = new FileWriter("out/" + arquivo);
+	arvore.setNomeMain(nomeMain);
+	writer.write(arvore.GERA_JAVA());
+	writer.close();
   }
 }
+
+
 
 PARSER_END(MiniRust)
 

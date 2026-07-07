@@ -1,7 +1,4 @@
-
-
-import ast.Comando;
-import ast.Exp;
+package ast;
 
 public class CAtribuicao extends Comando{
 	public int linha;
@@ -16,7 +13,7 @@ public class CAtribuicao extends Comando{
 	} 
 
 	public String GERA_JAVA(){
-		return var + "=" + exp.GERA_JAVA();
+		return var + " = " + exp.GERA_JAVA() + ";";
 	}
 
 }

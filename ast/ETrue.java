@@ -9,7 +9,7 @@ public class ETrue extends Exp{
 	} 
 
 public String GERA_JAVA(){
-	return "True";
+	return "true";
 }
 
 }

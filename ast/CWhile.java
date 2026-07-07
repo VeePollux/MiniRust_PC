@@ -1,8 +1,7 @@
-
-
+package ast;
 import java.util.ArrayList;
 
-import ast.Exp;
+
 
 public class CWhile extends Comando{
 	public int linha;
@@ -19,8 +18,8 @@ public class CWhile extends Comando{
 	public String GERA_JAVA(){
 		String blo = "";
 		for(Comando b : this.bloco){
-			blo = blo + "\n\t"+ b.GERA_JAVA();
+			blo = blo + "\n\t\t\t"+ b.GERA_JAVA();
 		}
-		return "while(" + exp.GERA_JAVA() + "){" + blo + "\n}"; 
+		return "while(" + exp.GERA_JAVA() + "){" + blo + "\n\t\t}"; 
 	}
 }
