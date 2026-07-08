@@ -16,9 +16,12 @@ public class CChamadaFun extends Comando{
 
 	public String GERA_JAVA(){
 		String argum = "";
-		for(Exp a : args){
-			argum = argum + a.GERA_JAVA();
+    	for(int i = 0; i < args.size(); i++){
+        	argum = argum + args.get(i).GERA_JAVA();
+        	if(i < args.size() - 1) 
+				argum = argum + ", ";
 		}
 		return fun + "(" + argum + ");";
 	}
+
 }
